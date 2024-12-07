@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 
 const useFollow = () => {
 	const queryClient = useQueryClient();
+
 	const { mutate: follow, isPending } = useMutation({
 		mutationFn: async (userId) => {
 			try {
